@@ -42,8 +42,10 @@
             this.trackSpeed = new System.Windows.Forms.TrackBar();
             this.lblSpeed = new System.Windows.Forms.Label();
             this.gbSpeedControl = new System.Windows.Forms.GroupBox();
-            this.rbNoSpeed = new System.Windows.Forms.RadioButton();
             this.rbAtSpeed = new System.Windows.Forms.RadioButton();
+            this.rbNoSpeed = new System.Windows.Forms.RadioButton();
+            this.txtLog = new System.Windows.Forms.TextBox();
+            this.progressBar = new System.Windows.Forms.ProgressBar();
             ((System.ComponentModel.ISupportInitialize)(this.trackSpeed)).BeginInit();
             this.gbSpeedControl.SuspendLayout();
             this.SuspendLayout();
@@ -54,7 +56,7 @@
             this.btnCreateText.Location = new System.Drawing.Point(76, 306);
             this.btnCreateText.Name = "btnCreateText";
             this.btnCreateText.Size = new System.Drawing.Size(141, 69);
-            this.btnCreateText.TabIndex = 0;
+            this.btnCreateText.TabIndex = 5;
             this.btnCreateText.Text = "Create Text Document";
             this.btnCreateText.UseVisualStyleBackColor = true;
             this.btnCreateText.Click += new System.EventHandler(this.btnCreateText_Click);
@@ -89,7 +91,7 @@
             this.btnPDFBrowse.Location = new System.Drawing.Point(612, 76);
             this.btnPDFBrowse.Name = "btnPDFBrowse";
             this.btnPDFBrowse.Size = new System.Drawing.Size(75, 23);
-            this.btnPDFBrowse.TabIndex = 3;
+            this.btnPDFBrowse.TabIndex = 2;
             this.btnPDFBrowse.Text = "Browse...";
             this.btnPDFBrowse.UseVisualStyleBackColor = true;
             this.btnPDFBrowse.Click += new System.EventHandler(this.btnPDFBrowse_Click);
@@ -100,7 +102,7 @@
             this.btnSaveWav.Location = new System.Drawing.Point(612, 121);
             this.btnSaveWav.Name = "btnSaveWav";
             this.btnSaveWav.Size = new System.Drawing.Size(75, 23);
-            this.btnSaveWav.TabIndex = 6;
+            this.btnSaveWav.TabIndex = 4;
             this.btnSaveWav.Text = "Save...";
             this.btnSaveWav.UseVisualStyleBackColor = true;
             this.btnSaveWav.Click += new System.EventHandler(this.btnSaveWav_Click);
@@ -121,7 +123,7 @@
             this.txtOutputFileLoc.Location = new System.Drawing.Point(149, 120);
             this.txtOutputFileLoc.Name = "txtOutputFileLoc";
             this.txtOutputFileLoc.Size = new System.Drawing.Size(456, 22);
-            this.txtOutputFileLoc.TabIndex = 4;
+            this.txtOutputFileLoc.TabIndex = 3;
             this.txtOutputFileLoc.TextChanged += new System.EventHandler(this.txtOutputFileLoc_TextChanged);
             // 
             // btnCreateAudioBook
@@ -130,7 +132,7 @@
             this.btnCreateAudioBook.Location = new System.Drawing.Point(438, 306);
             this.btnCreateAudioBook.Name = "btnCreateAudioBook";
             this.btnCreateAudioBook.Size = new System.Drawing.Size(140, 69);
-            this.btnCreateAudioBook.TabIndex = 7;
+            this.btnCreateAudioBook.TabIndex = 9;
             this.btnCreateAudioBook.Text = "Create Audio Book";
             this.btnCreateAudioBook.UseVisualStyleBackColor = true;
             this.btnCreateAudioBook.Click += new System.EventHandler(this.btnCreateAudioBook_Click);
@@ -171,12 +173,24 @@
             this.gbSpeedControl.Controls.Add(this.rbNoSpeed);
             this.gbSpeedControl.Controls.Add(this.lblSpeed);
             this.gbSpeedControl.Controls.Add(this.trackSpeed);
+            this.gbSpeedControl.Enabled = false;
             this.gbSpeedControl.Location = new System.Drawing.Point(359, 175);
             this.gbSpeedControl.Name = "gbSpeedControl";
             this.gbSpeedControl.Size = new System.Drawing.Size(302, 113);
             this.gbSpeedControl.TabIndex = 11;
             this.gbSpeedControl.TabStop = false;
             this.gbSpeedControl.Text = "Speed Control";
+            // 
+            // rbAtSpeed
+            // 
+            this.rbAtSpeed.AutoSize = true;
+            this.rbAtSpeed.Location = new System.Drawing.Point(16, 63);
+            this.rbAtSpeed.Name = "rbAtSpeed";
+            this.rbAtSpeed.Size = new System.Drawing.Size(91, 21);
+            this.rbAtSpeed.TabIndex = 7;
+            this.rbAtSpeed.Text = "At Speed:";
+            this.rbAtSpeed.UseVisualStyleBackColor = true;
+            this.rbAtSpeed.CheckedChanged += new System.EventHandler(this.rbAtSpeed_CheckedChanged);
             // 
             // rbNoSpeed
             // 
@@ -185,27 +199,35 @@
             this.rbNoSpeed.Location = new System.Drawing.Point(16, 36);
             this.rbNoSpeed.Name = "rbNoSpeed";
             this.rbNoSpeed.Size = new System.Drawing.Size(103, 21);
-            this.rbNoSpeed.TabIndex = 11;
+            this.rbNoSpeed.TabIndex = 6;
             this.rbNoSpeed.TabStop = true;
             this.rbNoSpeed.Text = "Unspecified";
             this.rbNoSpeed.UseVisualStyleBackColor = true;
             // 
-            // rbAtSpeed
+            // txtLog
             // 
-            this.rbAtSpeed.AutoSize = true;
-            this.rbAtSpeed.Location = new System.Drawing.Point(16, 63);
-            this.rbAtSpeed.Name = "rbAtSpeed";
-            this.rbAtSpeed.Size = new System.Drawing.Size(91, 21);
-            this.rbAtSpeed.TabIndex = 12;
-            this.rbAtSpeed.Text = "At Speed:";
-            this.rbAtSpeed.UseVisualStyleBackColor = true;
-            this.rbAtSpeed.CheckedChanged += new System.EventHandler(this.rbAtSpeed_CheckedChanged);
+            this.txtLog.Location = new System.Drawing.Point(76, 405);
+            this.txtLog.Multiline = true;
+            this.txtLog.Name = "txtLog";
+            this.txtLog.ReadOnly = true;
+            this.txtLog.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtLog.Size = new System.Drawing.Size(502, 77);
+            this.txtLog.TabIndex = 12;
+            // 
+            // progressBar
+            // 
+            this.progressBar.Location = new System.Drawing.Point(76, 498);
+            this.progressBar.Name = "progressBar";
+            this.progressBar.Size = new System.Drawing.Size(502, 23);
+            this.progressBar.TabIndex = 14;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(697, 387);
+            this.ClientSize = new System.Drawing.Size(697, 533);
+            this.Controls.Add(this.progressBar);
+            this.Controls.Add(this.txtLog);
             this.Controls.Add(this.btnCreateAudioBook);
             this.Controls.Add(this.btnSaveWav);
             this.Controls.Add(this.lblOutputFileLoc);
@@ -242,6 +264,8 @@
         private System.Windows.Forms.GroupBox gbSpeedControl;
         private System.Windows.Forms.RadioButton rbAtSpeed;
         private System.Windows.Forms.RadioButton rbNoSpeed;
+        private System.Windows.Forms.TextBox txtLog;
+        private System.Windows.Forms.ProgressBar progressBar;
     }
 }
 
