@@ -28,7 +28,7 @@ def convertImage(path, density = 600):
     txtTesseractName = makeFilePath(dirname,filebasename,"txt",False)
     #convertCommand = "convert -monochrome -density " + str(density) + " " + pdfFileName + " " + imgFileName
     #OCRCommand = "tesseract " + imgFileName + " " + txtTesseractName
-    OCRCommand = "\"C:\\Program Files (x86)\\Tesseract-OCR\\tesseract.exe\" " + imgFileName + " " + txtTesseractName
+    OCRCommand = "\"Extras\\Tesseract-OCR\\tesseract.exe\" " + imgFileName + " " + txtTesseractName
     startTime = time.time()    
     print "-----------------------------------------------------------"
     print "\nBeginning Optical Character Recognition of " + imgFileName

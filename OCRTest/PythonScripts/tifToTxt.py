@@ -34,7 +34,7 @@ def convertTif(path, density = 600):
     txtTesseractName = makeFilePath(dirname,filebasename,"txt",False)
     #convertCommand = "convert -monochrome -density " + str(density) + " " + pdfFileName + " " + tifFileName
     #OCRCommand = "tesseract " + tifFileName + " " + txtTesseractName
-    OCRCommand = "\"C:\\Program Files (x86)\\Tesseract-OCR\\tesseract.exe\" " + tifFileName + " " + txtTesseractName
+    OCRCommand = "\"Extras\\Tesseract-OCR\\tesseract.exe\" " + tifFileName + " " + txtTesseractName
     startTime = time.time()    
     print "-----------------------------------------------------------"
     print "\nBeginning Optical Character Recognition of " + tifFileName

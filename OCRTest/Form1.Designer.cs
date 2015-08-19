@@ -141,7 +141,7 @@
             // 
             this.waveFileDialog.DefaultExt = "wav";
             this.waveFileDialog.FileName = "audiobook.wav";
-            this.waveFileDialog.Filter = "Wave Sound File|*.wav";
+            this.waveFileDialog.Filter = "Wave Sound File|*.wav|MP3 File|*.mp3";
             this.waveFileDialog.Title = ".wav Save Location";
             this.waveFileDialog.FileOk += new System.ComponentModel.CancelEventHandler(this.waveFileDialog_FileOk);
             // 

@@ -1,0 +1,26 @@
+var a00606 =
+[
+    [ "TessdataManager", "a00359.html", "a00359" ],
+    [ "TessdataType", "a00606.html#a5f278974ef80900b460194614d4f1899", null ],
+    [ "kAmbigsFileSuffix", "a00606.html#a1622b229e3a2f93dd7aa3b13e2d36288", null ],
+    [ "kBigramDawgFileSuffix", "a00606.html#a11bbf38018a4fd72e1145d7bd7461a8c", null ],
+    [ "kBuiltInCutoffsFileSuffix", "a00606.html#a5048fef4db89e5ab7006c07869eaeaa4", null ],
+    [ "kBuiltInTemplatesFileSuffix", "a00606.html#ad973511bbb692173060837875bd32acc", null ],
+    [ "kCubeSystemDawgFileSuffix", "a00606.html#a618edefde84b121fa0824cf116b58a0e", null ],
+    [ "kCubeUnicharsetFileSuffix", "a00606.html#a95bf92cf1779bf669450f33d163dcd2f", null ],
+    [ "kFixedLengthDawgsFileSuffix", "a00606.html#aa1bdceebc41071e8eb0f0513a19fa006", null ],
+    [ "kFreqDawgFileSuffix", "a00606.html#a1acb609951395cb724e8b0a5f398f74d", null ],
+    [ "kLangConfigFileSuffix", "a00606.html#aadf16c26827bbbcc680a09de2c4aa18d", null ],
+    [ "kMaxNumTessdataEntries", "a00606.html#af891390c2ee8195ea41d9d9ff5ebc912", null ],
+    [ "kNormProtoFileSuffix", "a00606.html#a35a580af1a2527cec9c04885e12d0070", null ],
+    [ "kNumberDawgFileSuffix", "a00606.html#a4b3d7dbe962cbf2e9cb9e9203ef69687", null ],
+    [ "kParamsTrainingModelFileSuffix", "a00606.html#ace43164189b8cb5d291221cb99de6b2f", null ],
+    [ "kPuncDawgFileSuffix", "a00606.html#a9779031cbcd31be60f8fdfe92bcd68ef", null ],
+    [ "kShapeTableFileSuffix", "a00606.html#acf83dcb80ceef944f739f89e4a1c83e5", null ],
+    [ "kSystemDawgFileSuffix", "a00606.html#a7c28d05d7089f9b79c3e8dc61eb9dbae", null ],
+    [ "kTessdataFileIsText", "a00606.html#a869d38f3d2e613027d5438b7bff5c037", null ],
+    [ "kTessdataFileSuffixes", "a00606.html#a339968ff5f9c76bb77b9620333accf09", null ],
+    [ "kTrainedDataSuffix", "a00606.html#ad48557132ca8687d01ea5a3d636ff3b6", null ],
+    [ "kUnambigDawgFileSuffix", "a00606.html#a93da15167491b1e9cd067478a13ce89c", null ],
+    [ "kUnicharsetFileSuffix", "a00606.html#a8d329b0a58ac53198d928aa44466880c", null ]
+];

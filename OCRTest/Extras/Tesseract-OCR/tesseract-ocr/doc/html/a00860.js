@@ -1,0 +1,27 @@
+var a00860 =
+[
+    [ "ClipCoord", "a00860.html#a69e4fdf462f4970119833cb3d425f65f", null ],
+    [ "MedianSpacing", "a00860.html#a45e5baac48bfc9a0494605c96a80320c", null ],
+    [ "MoveBlobsToBlock", "a00860.html#aa447b89fe26829a0abcc1b16a7f179a1", null ],
+    [ "UpdateLeftMargin", "a00860.html#a7cd4b87303a2cb2a8231474c9af9421c", null ],
+    [ "UpdateRightMargin", "a00860.html#ae4da59f421f061137c590cf73548f08b", null ],
+    [ "kBlobTypes", "a00860.html#a20254a33e4245d3bc7edce6c87619aca", null ],
+    [ "kHorzStrongTextlineAspect", "a00860.html#a8bb43436a786b376902309db2f0b5699", null ],
+    [ "kHorzStrongTextlineCount", "a00860.html#a32f2825c55e218c93202c88eb0a9e9cd", null ],
+    [ "kHorzStrongTextlineHeight", "a00860.html#a5f972eef50e9dbc6cf11d791a877ad6e", null ],
+    [ "kLeaderCutCost", "a00860.html#a75bf494eb463097bac2fe7c5d8d1d660", null ],
+    [ "kMaxBaselineError", "a00860.html#a8043339cb79428cd76d41f5432de9712", null ],
+    [ "kMaxColorDistance", "a00860.html#a4fb5be2b91cab225fc69bec75ccf96bc", null ],
+    [ "kMaxLeaderGapFractionOfMax", "a00860.html#afa8971bf35c601524286aeb419a061a2", null ],
+    [ "kMaxLeaderGapFractionOfMin", "a00860.html#a06d2e157a317d737547326b3a463326f", null ],
+    [ "kMaxPartnerDepth", "a00860.html#aa442956755df972dd0aa8ab4d832e5bd", null ],
+    [ "kMaxRMSColorNoise", "a00860.html#abf95c90bc0630ea9218c2eb0d70472dd", null ],
+    [ "kMaxSameBlockLineSpacing", "a00860.html#ab896bf3ee331c3dc994d6ca764d523b0", null ],
+    [ "kMaxSizeRatio", "a00860.html#a253deddf742f4040aa4cd65ec08808e0", null ],
+    [ "kMaxSpacingDrift", "a00860.html#ae0a877f2f2010a2510e31be3d5cf9a46", null ],
+    [ "kMaxTopSpacingFraction", "a00860.html#ab991108b48ad3c8977dc27b8b40697c4", null ],
+    [ "kMinBaselineCoverage", "a00860.html#a65472193d051a39743ef565bd34bcc64", null ],
+    [ "kMinChainTextValue", "a00860.html#a22d76064f02915e8be7a835f2ea05038", null ],
+    [ "kMinLeaderCount", "a00860.html#a97c300450ada83371da245cda0fdee0e", null ],
+    [ "kMinStrongTextValue", "a00860.html#ac940a7cfcc7b1a0ecab3e6c0af788175", null ]
+];

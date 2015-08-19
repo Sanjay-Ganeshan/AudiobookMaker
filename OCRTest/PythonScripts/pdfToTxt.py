@@ -35,8 +35,11 @@ def convertPdf(path, density = 400):
     txtTesseractName = makeFilePath(dirname,filebasename,"txt",False)
     #convertCommand = "convert -monochrome -density " + str(density) + " " + pdfFileName + " " + tifFileName
     #OCRCommand = "tesseract " + tifFileName + " " + txtTesseractName
-    convertCommand = "\"C:\\Program Files\\ImageMagick-6.9.2-Q16\\convert.exe\" -monochrome -density " + str(density) + " " + pdfFileName + " " + tifFileName
-    OCRCommand = "\"C:\\Program Files (x86)\\Tesseract-OCR\\tesseract.exe\" " + tifFileName + " " + txtTesseractName
+    #f = open("../helloTHERE.txt","w")
+    #f.write("Sup")
+    #f.close()
+    convertCommand = "\"Extras\\ImageMagick-6.9.2-Q16\\convert.exe\" -monochrome -density " + str(density) + " " + pdfFileName + " " + tifFileName
+    OCRCommand = "\"Extras\\Tesseract-OCR\\tesseract.exe\" " + tifFileName + " " + txtTesseractName
     print "\nBeginning Conversion of " + pdfFileName
     print "-----------------------------------------------------------"
     print "COMMAND: " + convertCommand
@@ -65,12 +68,5 @@ def main():
     #path = raw_input("Path of directory with /? - ")
     #convertAllPdfFiles(path)
     print "Job complete."
-    f = open("C:/Users/sanjay/Documents/OCR/testSuccessful.txt","w")
-    f.write("YES")
-    f.close()
 
 main()
-
-f = open("C:/Users/sanjay/Documents/OCR/testDir.txt","w")
-f.write(str(__name__))
-f.close()
